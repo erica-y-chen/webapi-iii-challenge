@@ -40,7 +40,7 @@ router.post('/', (req,res) => {
 })
 
 
-router.delete('/', (req,res) => {
+router.delete('/:id', (req,res) => {
     postId = req.params.id;
     
     db.remove(postId)
